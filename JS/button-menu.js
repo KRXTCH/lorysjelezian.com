@@ -1,7 +1,7 @@
 var mls       = document.querySelector(".menu-links");
 var menuPage  = document.querySelector(".menu");
-const icnMenu = document.querySelector('.menu-icon');
-var content = document.querySelector(".content");
+var icnMenu   = document.querySelector('.menu-icon');
+var content   = document.querySelector(".content");
 
 mls.style.visibily = "hidden";
 mls.style.display  = "none";
@@ -53,11 +53,7 @@ $(".about-btn").click((e) => {
 
 
 function openMenu() {
-
-   mls.style.visibily = "visible";
-   mls.style.display = "block";
-
-   content.style.visibily = "hidden";
+   mls.style.display     = "block";
    content.style.display = "none";
 
    menuPage.style.background = "rgba(0, 0, 0, 0.2)";
@@ -66,8 +62,6 @@ function openMenu() {
 }
 
 function closeMenu() {
-
-   mls.style.visibily = "hidden";
    mls.style.display = "none";
    mls.style.opacity = 0;
 

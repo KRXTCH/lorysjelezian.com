@@ -2,35 +2,32 @@ var menuIconBgColors = document.querySelector('.menu-icon').querySelectorAll('sp
 var menuIconBgColor1 = menuIconBgColors[0];
 var menuIconBgColor2 = menuIconBgColors[1];
 
-var p1 = document.querySelector(".project-page_container-1");
-var p2 = document.querySelector(".project-page_container-2");
-var p3 = document.querySelector(".project-page_container-3");
-var app = document.querySelector(".app");
-var pp = document.querySelector(".project-page");
-var nt = document.querySelector(".name-title");
-var ntt = document.querySelector(".name-title_title");
+var p1      = document.querySelector(".project-page_container-1");
+var p2      = document.querySelector(".project-page_container-2");
+var p3      = document.querySelector(".project-page_container-3");
+var app     = document.querySelector(".app");
+var pp      = document.querySelector(".project-page");
+var nt      = document.querySelector(".name-title");
+var ntt     = document.querySelector(".name-title_title");
 var content = document.querySelector(".content");
-var mls = document.querySelector(".menu-links");
+var mls     = document.querySelector(".menu-links");
 
 var animation;
 var isAnimate = false;
 
 var down = 0;
-var up = 0;
+var up   = 0;
 
 var tchStrt = 0;
-var tchNd = 0;
+var tchNd   = 0;
 
 var ntIsVisible = true;
 var p1IsVisible = false;
 var p2IsVisible = false;
 var p3IsVisible = false;
 
-p1.style.visibily = "hidden";
 p1.style.display = "none";
-p2.style = "visibily : hidden";
 p2.style.display = "none";
-p3.style.visibily = "hidden";
 p3.style.display = "none";
 
 
@@ -140,13 +137,10 @@ function PageNaviagtion() {
 
 $(".home-btn").click((e) => {
 
-    content.style.visibily = "visible";
     content.style.display = "block";
 
-    nt.style = "visibily : visible;";
-    nt.style = "display : box;";
+    nt.style = "display : block;";
 
-    mls.style = "visibily : hidden;";
     mls.style = "display : none;";
 
     ntIsVisible = true;
@@ -154,11 +148,8 @@ $(".home-btn").click((e) => {
     p2IsVisible = false;
     p3IsVisible = false;
 
-    p1.style.visibily = "hidden";
     p1.style.display = "none";
-    p2.style = "visibily : hidden";
     p2.style.display = "none";
-    p3.style.visibily = "hidden";
     p3.style.display = "none";
 
     menuIconBgColor1.style.backgroundColor = "var(--bar-bg, rgb(24, 24, 24))";
@@ -190,16 +181,12 @@ $(".home-btn").click((e) => {
 })
 
 $(".project-btn").click((e) => {
-    content.style.visibily = "visible";
     content.style.display = "block";
 
-    p2.style = "visibily : hidden";
     p2.style.display = "none";
 
-    p3.style.visibily = "hidden";
     p3.style.display = "none";
 
-    mls.style = "visibily : hidden;";
     mls.style = "display : none;";
 
     ntIsVisible = false;
@@ -234,19 +221,13 @@ $(".about-btn").click((e) => {
 function reset() {
     down = 0;
     up = 0;
-    $(".content").css('transform', "translateY(" + up + "px)");
-    $(".content").css('transform', "translateY(" + down + "px)");
 }
 
 function hide() {
-    nt.style.visibily = "hidden";
     nt.style.display = "none";
-
     ntIsVisible = false;
 
-    p1.style = "visibily: visible;";
-    p1.style = "display : box";
-
+    p1.style = "display : block";
     p1IsVisible = true;
 
     app.style = "background : #e3e3e3";
@@ -260,14 +241,10 @@ function hide() {
 function project1to2() {
     p2.style.opacity = "1";
 
-    p1.style = "visibily: hidden;";
     p1.style = "display : none;";
-
     p1IsVisible = false;
 
-    p2.style = "visibily : visible;";
-    p2.style = "display : box;";
-
+    p2.style = "display : block;";
     p2IsVisible = true;
 
     app.style = "background : #d3b8ff  ";
@@ -283,14 +260,10 @@ function project1to2() {
 function project2to3() {
     p3.style.opacity = "1";
 
-    p2.style = "visibily : hidden;";
     p2.style = "display : none;";
-
     p2IsVisible = false;
 
-    p3.style = "visibily : visible;";
-    p3.style = "display : box";
-
+    p3.style = "display : block";
     p3IsVisible = true;
 
     app.style = "background : #00192f ";
@@ -305,14 +278,10 @@ function project2to3() {
 
 
 function project3to1() {
-    p3.style = "visibily : hidden;";
     p3.style = "display : none;";
-
     p3IsVisible = false;
 
-    p1.style = "visibily: visible;";
-    p1.style = "display : box";
-
+    p1.style = "display : block";
     p1IsVisible = true;
 
     app.style = "background : #e3e3e3";
@@ -324,15 +293,10 @@ function project3to1() {
 }
 
 function project3to2() {
-
-    p3.style = "visibily : hidden;";
     p3.style = "display : none;";
-
     p3IsVisible = false;
 
-    p2.style = "visibily : visible;";
-    p2.style = "display : box;";
-
+    p2.style = "display : block;";
     p2IsVisible = true;
 
     app.style = "background : #d3b8ff  ";
@@ -347,15 +311,10 @@ function project3to2() {
 }
 
 function project2to1() {
-
-    p2.style = "visibily : hidden;";
     p2.style = "display : none;";
-
     p2IsVisible = false;
 
-    p1.style = "visibily : visible;";
-    p1.style = "display : box;";
-
+    p1.style = "display : block;";
     p1IsVisible = true;
 
     app.style = "background : #e3e3e3";
@@ -368,14 +327,10 @@ function project2to1() {
 }
 
 function project1to3() {
-    p1.style = "visibily : hidden;";
     p1.style = "display : none;";
-
     p1IsVisible = false;
 
-    p3.style = "visibily : visible;";
-    p3.style = "display : box;";
-
+    p3.style = "display : block;";
     p3IsVisible = true;
 
     app.style = "background : #00192f ";

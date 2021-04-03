@@ -76,7 +76,7 @@
                             <img class="block1" src="Images/Image_Projet-1/Block.png"></img>
                             <img class="block2" src="Images/Image_Projet-1/Block.png"></img>
                             <img class="player" src="Images/Image_Projet-1/Player.png"></img>
-                            <button class="button">
+                            <button class="button" onclick="window.location.href = 'https://github.com/KRXTCH/Fill';">
                                 Github
                                 <div class="button__horizontal"></div>
                                 <div class="button__vertical"></div>
@@ -96,7 +96,7 @@
                             <div class="block-orange1"></div>
                             <div class="block-orange2"></div>
                             <div class="block-orange3"></div>
-                            <button class="button">
+                            <button class="button" onclick="window.location.href = 'https://github.com/KRXTCH/Imagik';">
                                 Github
                                 <div class="button__horizontal"></div>
                                 <div class="button__vertical"></div>
@@ -121,10 +121,12 @@
                             </div>
                             <img class="project-page_3-energy1" src="Images/Image_Projet-3/Energy1.png" />
                             <img class="project-page_3-energy2" src="Images/Image_Projet-3/Energy2.png" />
-                            <button class="button">
+                            <button class="button" onclick="errorMsg()">
                                 Github
                                 <div class="button__horizontal"></div>
                                 <div class="button__vertical"></div>
+                            </button>
+                            <span class="btn-error-msg">Erreur : Ce projet n'est pas encore disponible.</span>
                         </div>
                     </div>
                 </div>
@@ -144,7 +146,7 @@
                             </p>
                         </div>
                         <div class="about-page_container-foot">
-                            <a href="#">EMAIL</a> - <a href="#">Github</a> - <a href="#">LinkedIn</a>
+                            <a href="mailto:lorysjele@gmail.com">EMAIL</a> - <a href="https://github.com/KRXTCH">Github</a> - <a href="https://www.linkedin.com/in/lorys-jelezian-aa68b4181/">LinkedIn</a>
                         </div>
                     </div>
                 </div>
@@ -215,6 +217,12 @@
             gyroscopeMaxAngleY: 45,
 
         });
+
+        function errorMsg(){
+            let erroText = $(".btn-error-msg");
+            erroText.css("display", "block");
+            erroText.fadeOut(4000);
+        }
 
     </script>
 

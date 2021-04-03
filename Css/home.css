@@ -1032,6 +1032,18 @@ body {
 	rotate: -15deg;
 }
 
+.btn-error-msg{
+	font-size: 14px;
+	line-height: 2em;
+	font-family: quicksandBookOblique;
+	text-align: left;
+	position: relative;
+	color: red;
+	display: none;
+	margin-left: 55%;
+	margin-top: 2%;
+}
+
 .video{
 	background-image: url("../Images/Image_Projet-3/Amongarous.mp4");
 }
