@@ -1382,11 +1382,11 @@ video::-webkit-media-controls {
 
 	.button:hover {
 		background: rgba(100, 0, 0, 0.03);
-		-webkit-transform: translateZ(0);
-		-moz-transform: translateZ(0);
-		-ms-transform: translateZ(0);
-		-o-transform: translateZ(0);
-		transform: translateZ(0);
+		-webkit-transform: translate3d(0, -40px, 0);
+		-moz-transform: translate3d(0, -40px, 0);
+		-ms-transform: translate3d(0, -40px, 0);
+		-o-transform: translate3d(0, -40px, 0);
+		transform: translate3d(0, -40px, 0);
 		backdrop-filter: blur(10px)
 	}
 
@@ -1649,6 +1649,18 @@ video::-webkit-media-controls {
 		-ms-transform:translate3d(-50%, -50%, 80px) rotate(-15deg);
 		-o-transform:translate3d(-50%, -50%, 80px) rotate(-15deg);
 		transform: translate3d(-50%, -50%, 80px) rotate(-15deg);
+	}
+
+	.btn-error-msg{
+		font-size: 3vw;
+		line-height: 2em;
+		font-family: quicksandBookOblique;
+		text-align: left;
+		position: absolute;
+		color: red;
+		display: none;
+		margin-left: 0;
+		margin-top: 0em;
 	}
 	
 	.about-page{
